@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مركز فتح الرحمن للدراسة القرآنية والعلوم الإسلامية - Xarunta Fathu Al-Rahmaan ee barashada Qur'aanka iyo culuumta Islaamka.">
+  <meta name="theme-color" content="#0b1c49">
+  <title>مركز فتح الرحمن | Xarunta Fathu Al-Rahmaan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0b1c49;--blue:#15377d;--gold:#f5c542;--cream:#fffaf0;--ink:#18233d;--muted:#64708a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:#fff}
+    a{text-decoration:none;color:inherit}
+    .topbar{background:var(--navy);color:#fff;padding:14px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .mark{width:42px;height:42px;border-radius:14px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-family:Amiri,serif;font-size:25px;font-weight:700}
+    .brand small{display:block;color:#cbd5ef;font-size:11px;font-weight:500;margin-top:2px}
+    nav{display:flex;gap:22px;font-size:14px;color:#edf1ff}
+    nav a:hover{color:var(--gold)}
+    .hero{background:radial-gradient(circle at 85% 15%,#254b9d 0,transparent 34%),linear-gradient(135deg,#0b1c49,#142f70);color:#fff;padding:76px 7% 82px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff20;border-radius:50%;right:-130px;bottom:-210px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06}
+    .hero-inner{max-width:1100px;margin:auto;position:relative;z-index:1}
+    .eyebrow{color:var(--gold);font-weight:700;letter-spacing:2px;font-size:12px;text-transform:uppercase}
+    h1{font-family:Amiri,serif;font-size:clamp(35px,6vw,65px);line-height:1.35;margin:15px 0 10px;color:#fff}
+    .hero h2{font-size:clamp(19px,3vw,26px);font-weight:700;margin:0 0 14px}
+    .hero p{color:#dbe4ff;font-size:17px;line-height:1.8;max-width:650px;margin:0 0 28px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-block;padding:14px 23px;border-radius:999px;font-weight:800;background:var(--gold);color:#172449}
+    .btn.outline{background:transparent;border:1px solid #ffffff70;color:#fff}
+    .section{padding:70px 7%;max-width:1250px;margin:auto}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 34px}
+    .section-head span{color:#b18508;font-weight:800;font-size:13px;letter-spacing:1px}
+    .section-head h2{font-size:clamp(28px,4vw,40px);color:var(--navy);margin:10px 0}
+    .section-head p{color:var(--muted);line-height:1.8;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #e8ebf2;border-radius:18px;padding:25px;box-shadow:0 12px 35px #10234b0b;transition:.2s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px #10234b16}
+    .number{width:42px;height:42px;border-radius:13px;background:#fff4c9;color:#866400;display:grid;place-items:center;font-weight:800;margin-bottom:17px}
+    .card h3{color:var(--navy);font-size:19px;margin:0 0 9px}
+    .card .ar{font-family:Amiri,serif;font-size:21px;direction:rtl;text-align:left;color:#9a7410;margin:0 0 9px}
+    .card p{color:var(--muted);line-height:1.7;margin:0;font-size:14px}
+    .about{background:var(--cream);max-width:none}
+    .about-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about h2{font-size:34px;color:var(--navy);margin:0 0 15px}
+    .about p{color:#59647b;line-height:1.9}
+    .quote{background:var(--navy);color:#fff;border-radius:22px;padding:30px}
+    .quote .ar{font-family:Amiri,serif;direction:rtl;font-size:28px;color:var(--gold);line-height:1.6}
+    .quote p{color:#e2e8fa;margin-bottom:0}
+    .contact{background:var(--navy);color:#fff;max-width:none}
+    .contact-inner{max-width:1100px;margin:auto;text-align:center}
+    .contact h2{font-size:34px;margin:0 0 12px}
+    .contact p{color:#d4ddf6;line-height:1.8;margin:0 auto 24px;max-width:650px}
+    .contact .btn{margin:5px}
+    .contact .btn.outline{border-color:#ffffff55}
+    footer{background:#071332;color:#b9c4e0;padding:22px 7%;text-align:center;font-size:13px}
+    .float-wa{position:fixed;right:18px;bottom:18px;background:#20c66b;color:#fff;border-radius:50px;padding:14px 19px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:10}
+    @media(max-width:850px){nav{gap:12px;font-size:12px}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.topbar{padding:12px 5%;align-items:flex-start;flex-direction:column}nav{width:100%;overflow:auto;padding-bottom:3px;white-space:nowrap}.hero{padding:58px 6% 65px}.section{padding:55px 6%}.grid{grid-template-columns:1fr}.about-inner{grid-template-columns:1fr;gap:20px}.float-wa{right:12px;bottom:12px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="mark">ف</span>
+      <span>FATHU AL-RAHMAAN<small>Xarunta Barashada Qur'aanka iyo Culuumta Islaamka</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Bogga Hore</a><a href="#adeegyada">Qaybaha</a><a href="#nagu-saabsan">Nagu Saabsan</a><a href="#xiriir">Nala Xiriir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">Xarun waxbarasho diini ah</div>
+        <h1 lang="ar" dir="rtl">مركز فتح الرحمن للدراسة القرآنية والعلوم الإسلامية</h1>
+        <h2>Xarunta Fathu Al-Rahmaan ee Barashada Qur'aanka iyo Culuumta Islaamka</h2>
+        <p>Ku soo dhawoow xarun loogu talagalay barashada Qur'aanka Kariimka, hagaajinta akhriska iyo qorista, iyo barashada culuumta Islaamka. Waxaan soo dhoweyneynaa carruurta iyo dadka waaweyn.</p>
+        <div class="actions">
+          <a class="btn" href="#adeegyada">Eeg Qaybaha Waxbarashada</a>
+          <a class="btn outline" href="#xiriir">Nala Soo Xiriir</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="adeegyada">
+      <div class="section-head">
+        <span>BARASHO IYO TARBIYO</span>
+        <h2>Qaybaha Waxbarashada</h2>
+        <p>Barnaamijyo waxbarasho oo loogu talagalay heerar iyo da'o kala duwan.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="number">01</div><h3>Xifdinta Qur'aanka Kariimka</h3><p class="ar" lang="ar">قسم تحفيظ القرآن الكريم للصغار والكبار</p><p>Qaybta xifdinta Qur'aanka Kariimka ee carruurta iyo dadka waaweyn.</p></article>
+        <article class="card"><div class="number">02</div><h3>Saxidda Akhriska Qur'aanka</h3><p class="ar" lang="ar">قسم تصحيح التلاوة القرآن الكريم</p><p>Qaybta saxidda akhriska, tajwiidka iyo hagaajinta ku dhawaaqidda Qur'aanka.</p></article>
+        <article class="card"><div class="number">03</div><h3>Barashada Akhriska iyo Qoraalka</h3><p class="ar" lang="ar">قسم تعليم القراءة والكتابة</p><p>Qaybta barashada akhriska, qorista iyo higgaadda afka Carabiga.</p></article>
+        <article class="card"><div class="number">04</div><h3>Qurxinta Farta Carabiga</h3><p class="ar" lang="ar">قسم تحسين الخط العربي</p><p>Qaybta hagaajinta iyo qurxinta qoraalka farta Carabiga.</p></article>
+        <article class="card"><div class="number">05</div><h3>Xifdinta Matuunta Shareecada</h3><p class="ar" lang="ar">قسم تحفيظ المتون الشرعية</p><p>Qaybta xifdinta matuunta iyo qoraallada aasaasiga ah ee culuumta shareecada.</p></article>
+        <article class="card"><div class="number">06</div><h3>Ardayda Iskuullada Dawliga ah</h3><p class="ar" lang="ar">قسم طلاب المدارس الحكومية</p><p>Qayb gaar ah oo loogu talagalay ardayda dhigata iskuullada dowladda.</p></article>
+        <article class="card"><div class="number">07</div><h3>Xannaanadda Carruurta</h3><p class="ar" lang="ar">قسم الروضة</p><p>Qaybta xannaanada iyo barbaarinta carruurta yaryar.</p></article>
+      </div>
+    </section>
+
+    <section class="section about" id="nagu-saabsan">
+      <div class="about-inner">
+        <div>
+          <h2>Nagu Saabsan</h2>
+          <p>مركز فتح الرحمن للدراسة القرآنية والعلوم الإسلامية waa xarun diiradda saarta barashada Qur'aanka Kariimka iyo culuumta Islaamka. Ujeeddadeennu waa inaan ardayda siinno fursad ay ku bartaan, ku xifdiyaan, kuna hagaajiyaan aqoontooda diineed.</p>
+          <p>Waxbarashadu waxay u furan tahay carruurta iyo dadka waaweyn, iyadoo la tixgelinayo heerka iyo baahida arday kasta.</p>
+        </div>
+        <div class="quote">
+          <div class="ar" lang="ar">خيركم من تعلم القرآن وعلمه</div>
+          <p>“Kan idiinku kheyr badan waa kan Qur'aanka barta oo dadka bara.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="xiriir">
+      <div class="contact-inner">
+        <h2>Nala Soo Xiriir</h2>
+        <p>Waxaan ku yaallaa Nairobi, Kenya. Wixii faahfaahin ah, isdiiwaangelin ama su'aalo ku saabsan qaybaha waxbarashada, nagala soo xiriir telefoon ama WhatsApp.</p>
+        <a class="btn" id="callLink" href="#xiriir">Telefoon: lambarka waa la gelinayaa</a>
+        <a class="btn outline" id="waLink" href="#xiriir">WhatsApp: lambarka waa la gelinayaa</a>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> مركز فتح الرحمن للدراسة القرآنية والعلوم الإسلامية. Xuquuqda way dhowran tahay.</footer>
+  <a class="float-wa" id="floatWa" href="#xiriir" aria-label="WhatsApp">WhatsApp</a>
+
+  <script>
+    // KU BEDDEL lambarrada hoose lambarrada xarunta. Ku qor qaabka caalamiga ah, tusaale 2547XXXXXXXX.
+    const PHONE_NUMBER = "254790117372";
+    const WHATSAPP_NUMBER = "254790117372";
+    document.getElementById("year").textContent = new Date().getFullYear();
+    if (PHONE_NUMBER) {
+      const call = document.getElementById("callLink");
+      call.href = "tel:+" + PHONE_NUMBER;
+      call.textContent = "Naga soo wac: 0790117372";
+    }
+    if (WHATSAPP_NUMBER) {
+      const waUrl = "https://wa.me/" + WHATSAPP_NUMBER;
+      document.getElementById("waLink").href = waUrl;
+      document.getElementById("waLink").target = "_blank";
+      document.getElementById("waLink").textContent = "WhatsApp: 0790117372";
+      document.getElementById("floatWa").href = waUrl;
+      document.getElementById("floatWa").target = "_blank";
+    }
+  </script>
+</body>
+</html>
